@@ -29,9 +29,8 @@
 
     links.forEach(link => {
         if (custom_optin_links.includes(link)) {
-            {
-                document.querySelector('#page-body').classList.add('custom_optin')
-            }
+            document.querySelector('#page-body').classList.add('custom_optin')
+
         }
         else if (exception_links.includes(link)) {
             document.querySelector('#page-body').classList.remove('custom_optin')
